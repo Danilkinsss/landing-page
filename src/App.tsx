@@ -47,15 +47,23 @@ function App() {
 
         <div
           id="members"
-          className="bg-purple-400 flex flex-col gap-10 border-2"
+          className="bg-purple-400 flex flex-col items-center gap-10 border-2"
         >
-          <div className="flex flex-row gap-10">
+          <div className="flex flex-row gap-32 justify-center place-items-center">
             <h2>Name 1</h2>
-            <img src={IMAGES.tyler} alt="first image" className="rounded-3xl" />
+            <img
+              src={IMAGES.tyler}
+              alt="first image"
+              className="rounded-full h-1/2 w-1/2 min-h-36 min-w-80"
+            />
           </div>
 
-          <div className="flex flex-row gap-10">
-            <img src={IMAGES.josh} alt="first image" />
+          <div className="flex flex-row gap-32 justify-center place-items-center">
+            <img
+              src={IMAGES.josh}
+              alt="first image"
+              className="rounded-full h-1/2 w-1/2 min-h-36 min-w-80"
+            />
             <h2>Name 2</h2>
           </div>
         </div>
@@ -73,23 +81,23 @@ function App() {
 
         {/* TODO: shadcn Avatar component❎❓❓ */}
 
-        <div id="socials" className="bg-amber-400 border-2">
+        <div id="socials" className="bg-amber-400 border-2 flex flex-col gap-3">
           <p>--Separator--</p>
-          <div>
+          <div className="flex flex-row gap-2">
+            <img src={IMAGES.inst} alt="instagram image" className=" h-7 w-7" />
             <p>Instagram</p>
-            <img src={IMAGES.inst} alt="instagram image" />
           </div>
-          <div>
+          <div className="flex flex-row gap-2">
+            <img src={IMAGES.spot} alt="youtube image" className=" h-7 w-7" />
             <p>Youtube</p>
-            <img src={IMAGES.spot} alt="youtube image" />
           </div>
-          <div>
+          <div className="flex flex-row gap-2">
+            <img src={IMAGES.yout} alt="spotify image" className=" h-7 w-7" />
             <p>Spotify</p>
-            <img src={IMAGES.yout} alt="spotify image" />
           </div>
-          <div>
+          <div className="flex flex-row gap-2">
+            <img src={IMAGES.fcb} alt="facebook image" className=" h-7 w-7" />
             <p>Facebook</p>
-            <img src={IMAGES.fcb} alt="facebook image" />
           </div>
         </div>
       </main>
