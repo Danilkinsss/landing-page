@@ -24,7 +24,7 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div className="w-screen">
+    <div>
       {/* <button
             onClick={() => setCount((count) => count + 1)}
             className="justify-self-end"
@@ -34,7 +34,7 @@ function App() {
       <header>
         <div className="bg-pink-300">Nav bar here</div>
       </header>
-      <main className="bg-black flex flex-col gap-32">
+      <main className="px-14 max-w-screen bg-black flex flex-col gap-24">
         <div
           id="quote and picture"
           className="  flex flex-col items-center p-10"
@@ -54,42 +54,49 @@ function App() {
         </div>
 
         <Separator className="bg-gray-400" />
-        <div id="carousel" className="w-100% flex align-middle justify-evenly">
-          <Carousel className=" bg-black w-[90%]">
-            <CarouselContent className="h-min flex align-middle justify-evenly">
-              <CarouselItem className=" aspect-video basis-1/3 items-center justify-center  p-6">
+
+        <div
+          id="carousel"
+          className="flex flex-col align-middle justify-evenly px-5 gap-5"
+        >
+          <h2 className="text-3xl text-white font-bold px-24">
+            My favourite songs
+          </h2>
+          <Carousel className=" px-8 bg-black w-[90%] mx-10">
+            <CarouselContent className="h-min align-middle justify-evenly flex ">
+              <CarouselItem className=" aspect-video basis-1/3 items-center justify-center  p-8">
                 <a href="https://www.youtube.com/watch?v=r_9Kf0D5BTs">
                   <img
                     src={IMAGES.song1}
                     alt="first song preview image"
-                    className="rounded-3xl object-cover max-h-full h-64 w-96 min-h-36 min-w-80 justify-self-center"
+                    className="transition ease-in-out delay-150 hover:scale-110 rounded-3xl object-cover max-h-full h-64 w-96 min-h-36 min-w-80 justify-self-center"
                   />
                 </a>
               </CarouselItem>
-              <CarouselItem className="aspect-video  basis-1/3 items-center justify-center p-6">
+              <CarouselItem className="aspect-video  basis-1/3 items-center justify-center p-8">
                 <a href="https://www.youtube.com/watch?v=3sO-Y1Zbft4">
                   <img
                     src={IMAGES.song2}
                     alt="second song preview image"
-                    className="rounded-3xl object-cover max-h-full h-64 w-96 min-h-36 min-w-80 justify-self-center"
+                    className="transition ease-in-out delay-150 hover:scale-110 rounded-3xl object-cover max-h-full h-64 w-96 min-h-36 min-w-80 justify-self-center"
                   />
                 </a>
               </CarouselItem>
-              <CarouselItem className="aspect-video basis-1/3 items-center justify-center p-6">
+              <CarouselItem className="aspect-video basis-1/3 items-center justify-center p-8">
                 <a href="https://www.youtube.com/watch?v=MEiVnNNpJLA">
                   <img
                     src={IMAGES.song3}
                     alt="third song preview image"
-                    className="rounded-3xl object-cover max-h-full h-64 w-96 min-h-36 min-w-80 justify-self-center"
+                    className="transition ease-in-out delay-150 hover:scale-110 rounded-3xl object-cover max-h-full h-64 w-96 min-h-36 min-w-80 justify-self-center"
                   />
                 </a>
               </CarouselItem>
-              <CarouselItem className="aspect-video  basis-1/3 items-center justify-center p-6">
+              <CarouselItem className="aspect-video  basis-1/3 items-center justify-center p-8">
                 <a href="https://www.youtube.com/watch?v=Io2hbcrAYBw">
                   <img
                     src={IMAGES.song4}
                     alt="forth song preview image"
-                    className="rounded-3xl object-cover max-h-full h-64 w-96 min-h-36 min-w-80 justify-self-center"
+                    className="transition ease-in-out delay-150 hover:scale-110 rounded-3xl object-cover max-h-full h-64 w-96 min-h-36 min-w-80 justify-self-center"
                   />
                 </a>
               </CarouselItem>
@@ -98,26 +105,12 @@ function App() {
             <CarouselNext className="bg-gray-400 border-gray-400" />
           </Carousel>
         </div>
-        {/* 
-        <div id="carousel" className="flex flex-row bg-blue-400  ">
-          <img
-            src={IMAGES.song1}
-            alt="first image"
-            className="rounded-3xl object-cover h-1/3 w-1/3 min-h-36 min-w-80"
-          />
-          <img src={IMAGES.song2} alt="first image" />
-          <img src={IMAGES.song3} alt="first image" />
-          <img src={IMAGES.song4} alt="first image" />
-        </div>
-         */}
 
         <Separator className="bg-gray-400" />
 
-        <div
-          id="members"
-          className=" flex flex-col items-center gap-10 w-screen"
-        >
-          <div className="flex flex-row gap-32 justify-center place-items-center">
+        <div id="members" className="px-5 flex flex-col gap-10">
+          <h2 className="text-3xl text-white font-bold px-24">Band members</h2>
+          <div className="items-center flex flex-row gap-32 justify-center place-items-center">
             <h3 className="text-lg font-serif  text-white w-[20%] leading-relaxed">
               <h2 className="text-2xl text-amber-200 font-bold">
                 Tyler Joseph
@@ -160,26 +153,30 @@ function App() {
 
         <Separator className="bg-gray-400" />
 
-        <div
-          id="questions"
-          className="flex flex-col  p-5 w-[70%] self-center gap-16 items-center place-items-center"
-        >
+        <div id="questions" className="w-full flex flex-col p-5 gap-16 ">
+          <h2 className="text-3xl text-white font-bold px-24">Questions</h2>
           <Accordion
             type="single"
             collapsible
-            className="w-full bg-black font-extrabold"
+            className="w-[70%] bg-black font-extrabold flex flex-col justify-center self-center"
           >
             <AccordionItem value="question-1">
-              <AccordionTrigger className="px-4 py-6 font-extrabold text-white text-lg">
+              <AccordionTrigger
+                className="transition ease-in-out
+               bg-zinc-950 hover:bg-zinc-900 my-2 duration-150  rounded-xl px-4 py-6 font-extrabold text-white text-lg"
+              >
                 When can I go to their concert?
               </AccordionTrigger>
-              <AccordionContent className="px-4 font-mono text-white">
+              <AccordionContent className="my-2 py-3 px-4 font-mono text-white rounded-xl">
                 They are currently on "The Clancy" world tour, therefore
                 starting from November 15 and till May 14.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="question-2">
-              <AccordionTrigger className="px-4 py-6 font-extrabold text-white text-lg">
+              <AccordionTrigger
+                className="transition ease-in-out
+               bg-zinc-950 hover:bg-zinc-900 my-2 duration-150  rounded-xl px-4 py-6 font-extrabold text-white text-lg"
+              >
                 Where can I meet them?
               </AccordionTrigger>
               <AccordionContent className="px-4 font-mono text-white">
@@ -188,7 +185,10 @@ function App() {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="question-3">
-              <AccordionTrigger className="px-4 py-6 font-bold text-white text-lg">
+              <AccordionTrigger
+                className="transition ease-in-out
+               bg-zinc-950 hover:bg-zinc-900 my-2 duration-150  rounded-xl px-4 py-6 font-extrabold text-white text-lg"
+              >
                 Any special guests on their concert in Barcelona?
               </AccordionTrigger>
               <AccordionContent className="px-4 font-mono text-white">
@@ -196,14 +196,11 @@ function App() {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
-          <div className="flex flex-col items-center place-items-center">
-            <a
-              href="https://www.twentyonepilots.com/tour"
-              className="w-full flex flex-col items-center place-items-center"
-            >
+          <div className="self-center">
+            <a href="https://www.twentyonepilots.com/tour">
               <Button
                 variant="destructive"
-                className="w-[50%] text-lg h-12 rounded-3xl self-center"
+                className="text-lg h-12 rounded-2xl self-center transition ease-in-out delay-150 hover:scale-110"
               >
                 Buy tickets now
               </Button>
