@@ -33,7 +33,7 @@ function App() {
       <header>
         <div className="bg-pink-300">Nav bar here</div>
       </header>
-      <main className="bg-black flex flex-col gap-24 ">
+      <main className="bg-black flex flex-col gap-32">
         <div
           id="quote and picture"
           className="  flex flex-col items-center p-10"
@@ -52,7 +52,7 @@ function App() {
           </div>
         </div>
 
-        {/* TODO: shadcn Carousel compnent✅ */}
+        <Separator className="bg-gray-400" />
         <div id="carousel" className="w-100% flex align-middle justify-evenly">
           <Carousel className=" bg-black w-[90%]">
             <CarouselContent className="h-min flex align-middle justify-evenly">
@@ -60,7 +60,7 @@ function App() {
                 <a href="https://www.youtube.com/watch?v=r_9Kf0D5BTs">
                   <img
                     src={IMAGES.song1}
-                    alt="first song image"
+                    alt="first song preview image"
                     className="rounded-3xl object-cover max-h-full h-64 w-96 min-h-36 min-w-80 justify-self-center"
                   />
                 </a>
@@ -69,7 +69,7 @@ function App() {
                 <a href="https://www.youtube.com/watch?v=3sO-Y1Zbft4">
                   <img
                     src={IMAGES.song2}
-                    alt="second song image"
+                    alt="second song preview image"
                     className="rounded-3xl object-cover max-h-full h-64 w-96 min-h-36 min-w-80 justify-self-center"
                   />
                 </a>
@@ -78,7 +78,7 @@ function App() {
                 <a href="https://www.youtube.com/watch?v=MEiVnNNpJLA">
                   <img
                     src={IMAGES.song3}
-                    alt="third song image"
+                    alt="third song preview image"
                     className="rounded-3xl object-cover max-h-full h-64 w-96 min-h-36 min-w-80 justify-self-center"
                   />
                 </a>
@@ -87,7 +87,7 @@ function App() {
                 <a href="https://www.youtube.com/watch?v=Io2hbcrAYBw">
                   <img
                     src={IMAGES.song4}
-                    alt="forth song image"
+                    alt="forth song preview image"
                     className="rounded-3xl object-cover max-h-full h-64 w-96 min-h-36 min-w-80 justify-self-center"
                   />
                 </a>
@@ -110,34 +110,58 @@ function App() {
         </div>
          */}
 
+        <Separator className="bg-gray-400" />
+
         <div
           id="members"
-          className="bg-purple-400 flex flex-col items-center gap-10 "
+          className=" flex flex-col items-center gap-10 w-screen"
         >
           <div className="flex flex-row gap-32 justify-center place-items-center">
-            <h2>Name 1</h2>
-            <img
-              src={IMAGES.tyler}
-              alt="first image"
-              className="rounded-full h-1/2 w-1/2 min-h-36 min-w-80"
-            />
+            <h3 className="text-lg font-serif  text-white w-[20%] leading-relaxed">
+              <h2 className="text-2xl text-amber-200 font-bold">
+                Tyler Joseph
+              </h2>{' '}
+              is the creative mind behind Twenty One Pilots, leading with
+              vocals, lyrics, and an array of instruments. He's known for
+              pouring raw, introspective energy into every performance.
+            </h3>
+            <a
+              href="https://en.wikipedia.org/wiki/Tyler_Joseph"
+              className="p-0 h-1/4 w-1/4 min-h-36 min-w-80"
+            >
+              <img
+                src={IMAGES.tyler}
+                alt="Tyler Joseph picture"
+                className="rounded-full"
+              />
+            </a>
           </div>
 
           <div className="flex flex-row gap-32 justify-center place-items-center">
-            <img
-              src={IMAGES.josh}
-              alt="first image"
-              className="rounded-full h-1/2 w-1/2 min-h-36 min-w-80"
-            />
-            <h2>Name 2</h2>
+            <a
+              href="https://en.wikipedia.org/wiki/Josh_Dun"
+              className="p-0 h-1/4 w-1/4 min-h-36 min-w-80"
+            >
+              <img
+                src={IMAGES.josh}
+                alt="Josh Dun picture"
+                className="rounded-full"
+              />
+            </a>
+            <h3 className="text-lg font-serif  text-white w-[20%] leading-relaxed">
+              <h2 className="text-2xl text-cyan-200 font-bold">Josh Dun</h2>
+              is the band’s dynamic drummer, always bringing explosive energy on
+              stage. He's the guy often found flipping over his drum kit
+              mid-song or jumping into the crowd.
+            </h3>
           </div>
         </div>
 
-        {/* TODO: shadcn Accordion component❎ */}
+        <Separator className="bg-gray-400" />
 
         <div
           id="questions"
-          className="flex flex-col gap-4 p-5 w-[70%]  self-center"
+          className="flex flex-col gap-4 p-5 w-[70%] self-center"
         >
           <Accordion
             type="single"
@@ -179,41 +203,41 @@ function App() {
           id="socials"
           className=" pb-24  flex flex-row gap-24 p-5  font-sans text-gray-400 self-center py-7 underline"
         >
-          <a href="">
+          <a href="https://www.instagram.com/twentyonepilots/?hl=en">
             <div className="flex flex-row gap-4">
               <img
                 src={IMAGES.inst}
-                alt="instagram image"
+                alt="instagram icon"
                 className=" h-7 w-7 hover:scale-120 hover:animate-spin brightness-50"
               />
               <p>Instagram</p>
             </div>
           </a>
-          <a href="">
+          <a href="https://open.spotify.com/artist/3YQKmKGau1PzlVlkL1iodx">
             <div className="flex flex-row gap-4">
               <img
                 src={IMAGES.spot}
-                alt="instagram image"
+                alt="spotify icon"
                 className=" h-7 w-7 hover:scale-120 hover:animate-spin brightness-50"
               />
               <p>Spotify</p>
             </div>
           </a>
-          <a href="">
+          <a href="https://www.youtube.com/channel/UCBQZwaNPFfJ1gZ1fLZpAEGw">
             <div className="flex flex-row gap-4">
               <img
                 src={IMAGES.yout}
-                alt="instagram image"
+                alt="youtube icon"
                 className=" h-7 w-7 hover:scale-120 hover:animate-spin brightness-50"
               />
               <p>Youtube</p>
             </div>
           </a>
-          <a href="">
+          <a href="https://www.facebook.com/twentyonepilots/">
             <div className="flex flex-row gap-4">
               <img
                 src={IMAGES.fcb}
-                alt="instagram image"
+                alt="facebook icon"
                 className=" h-7 w-7 hover:scale-120 hover:animate-spin brightness-50"
               />
               <p>Facebook</p>
