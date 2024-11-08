@@ -7,6 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from './components/ui/accordion'
+import { Button } from './components/ui/button'
 import { Separator } from './components/ui/separator'
 import IMAGES from './images/Images'
 
@@ -161,7 +162,7 @@ function App() {
 
         <div
           id="questions"
-          className="flex flex-col gap-4 p-5 w-[70%] self-center"
+          className="flex flex-col  p-5 w-[70%] self-center gap-16 items-center place-items-center"
         >
           <Accordion
             type="single"
@@ -195,6 +196,19 @@ function App() {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
+          <div className="flex flex-col items-center place-items-center">
+            <a
+              href="https://www.twentyonepilots.com/tour"
+              className="w-full flex flex-col items-center place-items-center"
+            >
+              <Button
+                variant="destructive"
+                className="w-[50%] text-lg h-12 rounded-3xl self-center"
+              >
+                Buy tickets now
+              </Button>
+            </a>
+          </div>
         </div>
 
         <Separator className="bg-gray-400" />
