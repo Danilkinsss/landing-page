@@ -7,6 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from './components/ui/accordion'
+import { Separator } from './components/ui/separator'
 import IMAGES from './images/Images'
 
 // shadcn components
@@ -22,7 +23,7 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div>
+    <div className="w-screen">
       {/* <button
             onClick={() => setCount((count) => count + 1)}
             className="justify-self-end"
@@ -35,7 +36,7 @@ function App() {
       <main className="bg-black flex flex-col gap-24 ">
         <div
           id="quote and picture"
-          className=" border-2 flex flex-col items-center p-10"
+          className="  flex flex-col items-center p-10"
         >
           <h1 className="bg-purple-400 w-1/3 p-10 justify-center align-middle">
             Band genre desriptiong + quote
@@ -53,7 +54,7 @@ function App() {
 
         {/* TODO: shadcn Carousel compnent✅ */}
         <div id="carousel" className="w-100% flex align-middle justify-evenly">
-          <Carousel className=" bg-black">
+          <Carousel className=" bg-black w-[90%]">
             <CarouselContent className="h-min flex align-middle justify-evenly">
               <CarouselItem className=" aspect-video basis-1/3 items-center justify-center  p-6">
                 <a href="https://www.youtube.com/watch?v=r_9Kf0D5BTs">
@@ -92,12 +93,12 @@ function App() {
                 </a>
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="bg-gray-400 border-gray-400" />
+            <CarouselNext className="bg-gray-400 border-gray-400" />
           </Carousel>
         </div>
         {/* 
-        <div id="carousel" className="flex flex-row bg-blue-400 border-2 ">
+        <div id="carousel" className="flex flex-row bg-blue-400  ">
           <img
             src={IMAGES.song1}
             alt="first image"
@@ -111,7 +112,7 @@ function App() {
 
         <div
           id="members"
-          className="bg-purple-400 flex flex-col items-center gap-10 border-2"
+          className="bg-purple-400 flex flex-col items-center gap-10 "
         >
           <div className="flex flex-row gap-32 justify-center place-items-center">
             <h2>Name 1</h2>
@@ -172,24 +173,52 @@ function App() {
           </Accordion>
         </div>
 
-        <div id="socials" className="bg-amber-400 border-2 flex flex-col gap-3">
-          <p>--Separator--</p>
-          <div className="flex flex-row gap-2">
-            <img src={IMAGES.inst} alt="instagram image" className=" h-7 w-7" />
-            <p>Instagram</p>
-          </div>
-          <div className="flex flex-row gap-2">
-            <img src={IMAGES.spot} alt="youtube image" className=" h-7 w-7" />
-            <p>Youtube</p>
-          </div>
-          <div className="flex flex-row gap-2">
-            <img src={IMAGES.yout} alt="spotify image" className=" h-7 w-7" />
-            <p>Spotify</p>
-          </div>
-          <div className="flex flex-row gap-2">
-            <img src={IMAGES.fcb} alt="facebook image" className=" h-7 w-7" />
-            <p>Facebook</p>
-          </div>
+        <Separator className="bg-gray-400" />
+
+        <div
+          id="socials"
+          className=" pb-24  flex flex-row gap-24 p-5  font-sans text-gray-400 self-center py-7 underline"
+        >
+          <a href="">
+            <div className="flex flex-row gap-4">
+              <img
+                src={IMAGES.inst}
+                alt="instagram image"
+                className=" h-7 w-7 hover:scale-120 hover:animate-spin brightness-50"
+              />
+              <p>Instagram</p>
+            </div>
+          </a>
+          <a href="">
+            <div className="flex flex-row gap-4">
+              <img
+                src={IMAGES.spot}
+                alt="instagram image"
+                className=" h-7 w-7 hover:scale-120 hover:animate-spin brightness-50"
+              />
+              <p>Spotify</p>
+            </div>
+          </a>
+          <a href="">
+            <div className="flex flex-row gap-4">
+              <img
+                src={IMAGES.yout}
+                alt="instagram image"
+                className=" h-7 w-7 hover:scale-120 hover:animate-spin brightness-50"
+              />
+              <p>Youtube</p>
+            </div>
+          </a>
+          <a href="">
+            <div className="flex flex-row gap-4">
+              <img
+                src={IMAGES.fcb}
+                alt="instagram image"
+                className=" h-7 w-7 hover:scale-120 hover:animate-spin brightness-50"
+              />
+              <p>Facebook</p>
+            </div>
+          </a>
         </div>
       </main>
     </div>
