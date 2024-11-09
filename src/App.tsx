@@ -31,25 +31,60 @@ function App() {
           >
             count is {count}
           </button> */}
-      <header>
-        <div className="bg-pink-300">Nav bar here</div>
+      <header
+        // className="w-full fixed top-0 p-20 text-2xl flex flex-col justify-center items-center transition-colors duration-500 ease-in-out"
+        className="px-14 max-w-screen fixed z-10"
+      >
+        <div
+          id="navbar"
+          className={`w-[92.7%] bg-red-700 flex justify-between fixed font-typeface text-5xl font-extralight tracking-wide `}
+        >
+          <div id="logo and name" className="flex gap-4 p-3 px-7 items-center">
+            <img
+              src={IMAGES.logo}
+              alt="logo"
+              className="object-cover h-9 w-9"
+            />
+            <div>Twenty One Pilots</div>
+          </div>
+          <div
+            id="navigations and website"
+            className="flex gap-8 p-3 px-7 text-4xl items-center"
+          >
+            <div id="navigations">...navigations...</div>
+            <a href="https://www.twentyonepilots.com/">
+              <div id="website">website</div>
+            </a>
+          </div>
+        </div>
       </header>
-      <main className="px-14 max-w-screen bg-black flex flex-col gap-24">
+      <main className="px-14 max-w-screen bg-black flex flex-col gap-24 ">
         <div
           id="quote and picture"
-          className="  flex flex-col items-center p-10"
+          className="flex flex-col items-center p-10 "
         >
-          <h1 className="bg-purple-400 w-1/3 p-10 justify-center align-middle">
-            Band genre desriptiong + quote
+          <h1
+            className=" animate-[pulse_3s_ease-in-out_infinite]
+ text-red-500/60 font-serif font-light tracking-wide text-center text-6xl w-2/3 p-32 justify-center align-middle"
+          >
+            "Unfiltered anthems, raw energy, and fearless artistry."
           </h1>
           <img
             src={IMAGES.poster}
             alt="first image"
-            className="object-cover h-96 w-[90%] p-10 "
+            className="object-cover h-96 w-[90%] p-10 opacity-75 blur-sm hover:blur-none  delay-200"
           />
 
-          <div className="bg-purple-400 w-1/3 p-10">
-            Band genre desriptiong + quote
+          <div className="underline underline-offset-8 min-w-fit flex text-lg text-zinc-100 gap-8 ">
+            <div className=" italic w-fit p-7 basis-auto	rounded bg-zinc-950 content-center ">
+              💿 Billions of Spotify streams
+            </div>
+            <div className="italic w-fit p-7 basis-auto	 rounded bg-zinc-950 content-center">
+              🏆 Grammy winners
+            </div>
+            <div className="italic w-fit p-7 basis-auto	 rounded bg-zinc-950 content-center">
+              📻 Longest-charting album of the 2010s
+            </div>
           </div>
         </div>
 
@@ -63,8 +98,8 @@ function App() {
             My favourite songs
           </h2>
           <Carousel className=" px-8 bg-black w-[90%] mx-10">
-            <CarouselContent className="h-min align-middle justify-evenly flex ">
-              <CarouselItem className=" aspect-video basis-1/3 items-center justify-center  p-8">
+            <CarouselContent className="h-min align-middle justify-evenly flex">
+              <CarouselItem className=" aspect-video basis-1/3 items-center justify-center p-8 ">
                 <a href="https://www.youtube.com/watch?v=r_9Kf0D5BTs">
                   <img
                     src={IMAGES.song1}
@@ -72,6 +107,9 @@ function App() {
                     className="transition ease-in-out delay-150 hover:scale-110 rounded-3xl object-cover max-h-full h-64 w-96 min-h-36 min-w-80 justify-self-center"
                   />
                 </a>
+                <h3 className="font-mono py-5 text-center text-zinc-400">
+                  Heavydirtysoul
+                </h3>
               </CarouselItem>
               <CarouselItem className="aspect-video  basis-1/3 items-center justify-center p-8">
                 <a href="https://www.youtube.com/watch?v=3sO-Y1Zbft4">
@@ -81,6 +119,9 @@ function App() {
                     className="transition ease-in-out delay-150 hover:scale-110 rounded-3xl object-cover max-h-full h-64 w-96 min-h-36 min-w-80 justify-self-center"
                   />
                 </a>
+                <h3 className="font-mono py-5 text-center text-zinc-400">
+                  Shy Away
+                </h3>
               </CarouselItem>
               <CarouselItem className="aspect-video basis-1/3 items-center justify-center p-8">
                 <a href="https://www.youtube.com/watch?v=MEiVnNNpJLA">
@@ -90,8 +131,11 @@ function App() {
                     className="transition ease-in-out delay-150 hover:scale-110 rounded-3xl object-cover max-h-full h-64 w-96 min-h-36 min-w-80 justify-self-center"
                   />
                 </a>
+                <h3 className="font-mono py-5 text-center text-zinc-400">
+                  Doubt
+                </h3>
               </CarouselItem>
-              <CarouselItem className="aspect-video  basis-1/3 items-center justify-center p-8">
+              <CarouselItem className="aspect-video  basis-1/3 items-center justify-center p-8 ">
                 <a href="https://www.youtube.com/watch?v=Io2hbcrAYBw">
                   <img
                     src={IMAGES.song4}
@@ -99,6 +143,9 @@ function App() {
                     className="transition ease-in-out delay-150 hover:scale-110 rounded-3xl object-cover max-h-full h-64 w-96 min-h-36 min-w-80 justify-self-center"
                   />
                 </a>
+                <h3 className="font-mono py-5 text-center text-zinc-400">
+                  The Hype
+                </h3>
               </CarouselItem>
             </CarouselContent>
             <CarouselPrevious className="bg-gray-400 border-gray-400" />
@@ -112,9 +159,7 @@ function App() {
           <h2 className="text-3xl text-white font-bold px-24">Band members</h2>
           <div className="items-center flex flex-row gap-32 justify-center place-items-center">
             <h3 className="text-lg font-serif  text-white w-[20%] leading-relaxed">
-              <h2 className="text-2xl text-amber-200 font-bold">
-                Tyler Joseph
-              </h2>{' '}
+              <p className="text-2xl text-amber-200 font-bold">Tyler Joseph</p>{' '}
               is the creative mind behind Twenty One Pilots, leading with
               vocals, lyrics, and an array of instruments. He's known for
               pouring raw, introspective energy into every performance.
@@ -143,7 +188,7 @@ function App() {
               />
             </a>
             <h3 className="text-lg font-serif  text-white w-[20%] leading-relaxed">
-              <h2 className="text-2xl text-cyan-200 font-bold">Josh Dun</h2>
+              <p className="text-2xl text-cyan-200 font-bold">Josh Dun</p>
               is the band’s dynamic drummer, always bringing explosive energy on
               stage. He's the guy often found flipping over his drum kit
               mid-song or jumping into the crowd.
@@ -200,7 +245,7 @@ function App() {
             <a href="https://www.twentyonepilots.com/tour">
               <Button
                 variant="destructive"
-                className="text-lg h-12 rounded-2xl self-center transition ease-in-out delay-150 hover:scale-110"
+                className="bg-red-600/90 hover:bg-red-600/80 text-lg h-12 rounded-2xl self-center transition ease-in-out delay-150 hover:scale-110"
               >
                 Buy tickets now
               </Button>
