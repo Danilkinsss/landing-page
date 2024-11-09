@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Typeface';
+  src: url('src/assets/Typeface Font.ttf');
+}
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -71,6 +76,6 @@ button:focus-visible {
 } */
 @layer base {
   :root {
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
 }

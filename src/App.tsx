@@ -31,8 +31,32 @@ function App() {
           >
             count is {count}
           </button> */}
-      <header>
-        <div className="bg-pink-300">Nav bar here</div>
+      <header
+        // className="w-full fixed top-0 p-20 text-2xl flex flex-col justify-center items-center transition-colors duration-500 ease-in-out"
+        className="px-14 max-w-screen fixed z-10"
+      >
+        <div
+          id="navbar"
+          className={`w-[92.7%] bg-red-700 flex justify-between fixed font-typeface text-5xl font-extralight tracking-wide `}
+        >
+          <div id="logo and name" className="flex gap-4 p-3 px-7 items-center">
+            <img
+              src={IMAGES.logo}
+              alt="logo"
+              className="object-cover h-9 w-9"
+            />
+            <div>Twenty One Pilots</div>
+          </div>
+          <div
+            id="navigations and website"
+            className="flex gap-8 p-3 px-7 text-4xl items-center"
+          >
+            <div id="navigations">...navigations...</div>
+            <a href="https://www.twentyonepilots.com/">
+              <div id="website">website</div>
+            </a>
+          </div>
+        </div>
       </header>
       <main className="px-14 max-w-screen bg-black flex flex-col gap-24 ">
         <div
@@ -41,7 +65,7 @@ function App() {
         >
           <h1
             className=" animate-[pulse_3s_ease-in-out_infinite]
- text-red-500/60 font-serif font-light tracking-wide text-center text-6xl w-2/3 p-10 justify-center align-middle"
+ text-red-500/60 font-serif font-light tracking-wide text-center text-6xl w-2/3 p-32 justify-center align-middle"
           >
             "Unfiltered anthems, raw energy, and fearless artistry."
           </h1>
@@ -135,9 +159,7 @@ function App() {
           <h2 className="text-3xl text-white font-bold px-24">Band members</h2>
           <div className="items-center flex flex-row gap-32 justify-center place-items-center">
             <h3 className="text-lg font-serif  text-white w-[20%] leading-relaxed">
-              <h2 className="text-2xl text-amber-200 font-bold">
-                Tyler Joseph
-              </h2>{' '}
+              <p className="text-2xl text-amber-200 font-bold">Tyler Joseph</p>{' '}
               is the creative mind behind Twenty One Pilots, leading with
               vocals, lyrics, and an array of instruments. He's known for
               pouring raw, introspective energy into every performance.
@@ -166,7 +188,7 @@ function App() {
               />
             </a>
             <h3 className="text-lg font-serif  text-white w-[20%] leading-relaxed">
-              <h2 className="text-2xl text-cyan-200 font-bold">Josh Dun</h2>
+              <p className="text-2xl text-cyan-200 font-bold">Josh Dun</p>
               is the band’s dynamic drummer, always bringing explosive energy on
               stage. He's the guy often found flipping over his drum kit
               mid-song or jumping into the crowd.
