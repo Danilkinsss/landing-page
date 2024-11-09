@@ -34,22 +34,33 @@ function App() {
       <header>
         <div className="bg-pink-300">Nav bar here</div>
       </header>
-      <main className="px-14 max-w-screen bg-black flex flex-col gap-24">
+      <main className="px-14 max-w-screen bg-black flex flex-col gap-24 ">
         <div
           id="quote and picture"
-          className="  flex flex-col items-center p-10"
+          className="flex flex-col items-center p-10 "
         >
-          <h1 className="bg-purple-400 w-1/3 p-10 justify-center align-middle">
-            Band genre desriptiong + quote
+          <h1
+            className=" animate-[pulse_3s_ease-in-out_infinite]
+ text-red-500/60 font-serif font-light tracking-wide text-center text-6xl w-2/3 p-10 justify-center align-middle"
+          >
+            "Unfiltered anthems, raw energy, and fearless artistry."
           </h1>
           <img
             src={IMAGES.poster}
             alt="first image"
-            className="object-cover h-96 w-[90%] p-10 "
+            className="object-cover h-96 w-[90%] p-10 opacity-75 blur-sm hover:blur-none  delay-200"
           />
 
-          <div className="bg-purple-400 w-1/3 p-10">
-            Band genre desriptiong + quote
+          <div className="underline underline-offset-8 min-w-fit flex text-lg text-zinc-100 gap-8 ">
+            <div className=" italic w-fit p-7 basis-auto	rounded bg-zinc-950 content-center ">
+              💿 Billions of Spotify streams
+            </div>
+            <div className="italic w-fit p-7 basis-auto	 rounded bg-zinc-950 content-center">
+              🏆 Grammy winners
+            </div>
+            <div className="italic w-fit p-7 basis-auto	 rounded bg-zinc-950 content-center">
+              📻 Longest-charting album of the 2010s
+            </div>
           </div>
         </div>
 
@@ -212,7 +223,7 @@ function App() {
             <a href="https://www.twentyonepilots.com/tour">
               <Button
                 variant="destructive"
-                className="text-lg h-12 rounded-2xl self-center transition ease-in-out delay-150 hover:scale-110"
+                className="bg-red-600/90 hover:bg-red-600/80 text-lg h-12 rounded-2xl self-center transition ease-in-out delay-150 hover:scale-110"
               >
                 Buy tickets now
               </Button>
