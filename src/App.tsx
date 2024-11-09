@@ -63,8 +63,8 @@ function App() {
             My favourite songs
           </h2>
           <Carousel className=" px-8 bg-black w-[90%] mx-10">
-            <CarouselContent className="h-min align-middle justify-evenly flex ">
-              <CarouselItem className=" aspect-video basis-1/3 items-center justify-center  p-8">
+            <CarouselContent className="h-min align-middle justify-evenly flex">
+              <CarouselItem className=" aspect-video basis-1/3 items-center justify-center p-8 ">
                 <a href="https://www.youtube.com/watch?v=r_9Kf0D5BTs">
                   <img
                     src={IMAGES.song1}
@@ -72,6 +72,9 @@ function App() {
                     className="transition ease-in-out delay-150 hover:scale-110 rounded-3xl object-cover max-h-full h-64 w-96 min-h-36 min-w-80 justify-self-center"
                   />
                 </a>
+                <h3 className="font-mono py-5 text-center text-zinc-400">
+                  Heavydirtysoul
+                </h3>
               </CarouselItem>
               <CarouselItem className="aspect-video  basis-1/3 items-center justify-center p-8">
                 <a href="https://www.youtube.com/watch?v=3sO-Y1Zbft4">
@@ -81,6 +84,9 @@ function App() {
                     className="transition ease-in-out delay-150 hover:scale-110 rounded-3xl object-cover max-h-full h-64 w-96 min-h-36 min-w-80 justify-self-center"
                   />
                 </a>
+                <h3 className="font-mono py-5 text-center text-zinc-400">
+                  Shy Away
+                </h3>
               </CarouselItem>
               <CarouselItem className="aspect-video basis-1/3 items-center justify-center p-8">
                 <a href="https://www.youtube.com/watch?v=MEiVnNNpJLA">
@@ -90,8 +96,11 @@ function App() {
                     className="transition ease-in-out delay-150 hover:scale-110 rounded-3xl object-cover max-h-full h-64 w-96 min-h-36 min-w-80 justify-self-center"
                   />
                 </a>
+                <h3 className="font-mono py-5 text-center text-zinc-400">
+                  Doubt
+                </h3>
               </CarouselItem>
-              <CarouselItem className="aspect-video  basis-1/3 items-center justify-center p-8">
+              <CarouselItem className="aspect-video  basis-1/3 items-center justify-center p-8 ">
                 <a href="https://www.youtube.com/watch?v=Io2hbcrAYBw">
                   <img
                     src={IMAGES.song4}
@@ -99,6 +108,9 @@ function App() {
                     className="transition ease-in-out delay-150 hover:scale-110 rounded-3xl object-cover max-h-full h-64 w-96 min-h-36 min-w-80 justify-self-center"
                   />
                 </a>
+                <h3 className="font-mono py-5 text-center text-zinc-400">
+                  The Hype
+                </h3>
               </CarouselItem>
             </CarouselContent>
             <CarouselPrevious className="bg-gray-400 border-gray-400" />
