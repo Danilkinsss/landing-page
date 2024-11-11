@@ -98,7 +98,7 @@ function App() {
       </header>
 
       <main className="px-14 max-w-screen bg-black flex flex-col gap-24 ">
-        <div id="main" className="flex flex-col items-center p-10 ">
+        <div id="main" className="flex flex-col items-center p-10 pt-20">
           <h1
             className=" animate-[pulse_3s_ease-in-out_infinite]
  text-red-500/60 font-serif font-light tracking-wide text-center text-6xl w-2/3 p-32 justify-center align-middle"
@@ -234,7 +234,7 @@ function App() {
 
         <Separator className="bg-gray-400" id="questionsSep" />
 
-        <div id="questions" className="w-full flex flex-col p-5 gap-16 ">
+        <div id="questions" className="w-full flex flex-col px-5 gap-16 ">
           <h2 className="text-3xl text-white font-bold px-24">Questions</h2>
           <Accordion
             type="single"
@@ -249,8 +249,8 @@ function App() {
                 When can I go to their concert?
               </AccordionTrigger>
               <AccordionContent className="my-2 py-3 px-4 font-mono text-white rounded-xl">
-                They are currently on "The Clancy" world tour, therefore
-                starting from November 15 and till May 14.
+                They are currently on "The Clancy" world tour, so starting from
+                November 15 and till May 14 you can see their performance.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="question-2">
@@ -262,7 +262,8 @@ function App() {
               </AccordionTrigger>
               <AccordionContent className="px-4 font-mono text-white">
                 All across the world: Oceania, South America and Europe. Their
-                biggest concert will be in London, Berlin, Paris and Barcelona.
+                biggest concerts close to us will be in London, Berlin, Paris
+                and Barcelona.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="question-3">
@@ -300,7 +301,7 @@ function App() {
               <img
                 src={IMAGES.inst}
                 alt="instagram icon"
-                className=" h-7 w-7 hover:scale-120 hover:animate-spin brightness-50"
+                className=" h-7 w-7 hover:brightness-[60%] brightness-50"
               />
               <p>Instagram</p>
             </div>
@@ -310,7 +311,7 @@ function App() {
               <img
                 src={IMAGES.spot}
                 alt="spotify icon"
-                className=" h-7 w-7 hover:scale-120 hover:animate-spin brightness-50"
+                className=" h-7 w-7 hover:brightness-[60%] brightness-50"
               />
               <p>Spotify</p>
             </div>
@@ -320,7 +321,7 @@ function App() {
               <img
                 src={IMAGES.yout}
                 alt="youtube icon"
-                className=" h-7 w-7 hover:scale-120 hover:animate-spin brightness-50"
+                className=" h-7 w-7 hover:brightness-[60%] brightness-50"
               />
               <p>Youtube</p>
             </div>
@@ -330,7 +331,7 @@ function App() {
               <img
                 src={IMAGES.fcb}
                 alt="facebook icon"
-                className=" h-7 w-7 hover:scale-120 hover:animate-spin brightness-50"
+                className=" h-7 w-7 hover:brightness-[60%] brightness-50"
               />
               <p>Facebook</p>
             </div>
