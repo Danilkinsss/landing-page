@@ -29,9 +29,12 @@ function App() {
       >
         <div
           id="navbar"
-          className="font-typeface w-[92.7%] bg-red-700 flex justify-between fixed  text-5xl font-extralight tracking-wide "
+          className="font-typeface w-[92.7%] bg-red-700 flex justify-between fixed  text-7xl font-extralight tracking-wide "
         >
-          <div id="logo and name" className="flex gap-4 p-3 px-7 items-center">
+          <div
+            id="logo and name"
+            className="text-6xl flex gap-4 p-3 px-7 items-center"
+          >
             <img
               src={IMAGES.logo}
               alt="logo"
