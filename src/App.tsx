@@ -21,16 +21,8 @@ import {
 } from '@/components/ui/carousel'
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <div>
-      {/* <button
-            onClick={() => setCount((count) => count + 1)}
-            className="justify-self-end"
-          >
-            count is {count}
-          </button> */}
       <header
         // className="w-full fixed top-0 p-20 text-2xl flex flex-col justify-center items-center transition-colors duration-500 ease-in-out"
         className="px-14 max-w-screen fixed z-10"
@@ -51,12 +43,12 @@ function App() {
             id="navigations and website"
             className="flex gap-14 p-3 px-7 text-4xl items-center"
           >
-            <div id="navigations" className="gap-24">
+            <nav id="navigations" className="gap-24">
               <ul className=" flex flex-row gap-4 ">
                 <li>
                   <a
                     href="#main"
-                    className="page-scroll hover:underline underline-offset-8   "
+                    className="hover:underline underline-offset-8"
                   >
                     main
                   </a>
@@ -64,7 +56,7 @@ function App() {
                 <li>
                   <a
                     href="#songsSep"
-                    className="page-scroll hover:underline underline-offset-8   "
+                    className="hover:underline underline-offset-8"
                   >
                     songs
                   </a>
@@ -72,7 +64,7 @@ function App() {
                 <li>
                   <a
                     href="#membersSep"
-                    className=" hover:underline underline-offset-8  ared-[100-500]:underline before:content-[#membersSep]"
+                    className="hover:underline underline-offset-8"
                   >
                     members
                   </a>
@@ -80,7 +72,7 @@ function App() {
                 <li>
                   <a
                     href="#questionsSep"
-                    className="page-scroll hover:underline underline-offset-8   "
+                    className=" hover:underline underline-offset-8   "
                   >
                     questions
                   </a>
@@ -88,13 +80,13 @@ function App() {
                 <li>
                   <a
                     href="#socials"
-                    className="page-scroll hover:underline underline-offset-8   "
+                    className=" hover:underline underline-offset-8   "
                   >
                     socials
                   </a>
                 </li>
               </ul>
-            </div>
+            </nav>
             <a href="https://www.twentyonepilots.com/">
               <div id="website">website</div>
             </a>
