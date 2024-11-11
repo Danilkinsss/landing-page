@@ -71,3 +71,30 @@ export const questions = [
     answer: `1 particularly special guy: me :)`,
   },
 ]
+
+export const socials = [
+  {
+    id: 0,
+    name: 'Instagram',
+    href: 'https://www.instagram.com/twentyonepilots/',
+    img: IMAGES.inst,
+  },
+  {
+    id: 0,
+    name: 'Spotify',
+    href: 'https://open.spotify.com/artist/3YQKmKGau1PzlVlkL1iodx',
+    img: IMAGES.spot,
+  },
+  {
+    id: 0,
+    name: 'Youtube',
+    href: 'https://www.youtube.com/channel/UCBQZwaNPFfJ1gZ1fLZpAEGw',
+    img: IMAGES.yout,
+  },
+  {
+    id: 0,
+    name: 'Facebook',
+    href: 'https://www.facebook.com/twentyonepilots/',
+    img: IMAGES.fcb,
+  },
+]
