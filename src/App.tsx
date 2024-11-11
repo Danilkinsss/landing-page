@@ -21,16 +21,8 @@ import {
 } from '@/components/ui/carousel'
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <div>
-      {/* <button
-            onClick={() => setCount((count) => count + 1)}
-            className="justify-self-end"
-          >
-            count is {count}
-          </button> */}
       <header
         // className="w-full fixed top-0 p-20 text-2xl flex flex-col justify-center items-center transition-colors duration-500 ease-in-out"
         className="px-14 max-w-screen fixed z-10"
@@ -49,20 +41,61 @@ function App() {
           </div>
           <div
             id="navigations and website"
-            className="flex gap-8 p-3 px-7 text-4xl items-center"
+            className="flex gap-14 p-3 px-7 text-4xl items-center"
           >
-            <div id="navigations">...navigations...</div>
+            <nav id="navigations" className="gap-24">
+              <ul className=" flex flex-row gap-4 ">
+                <li>
+                  <a
+                    href="#main"
+                    className="hover:underline underline-offset-8"
+                  >
+                    main
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#songsSep"
+                    className="hover:underline underline-offset-8"
+                  >
+                    songs
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#membersSep"
+                    className="hover:underline underline-offset-8"
+                  >
+                    members
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#questionsSep"
+                    className=" hover:underline underline-offset-8   "
+                  >
+                    questions
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#socials"
+                    className=" hover:underline underline-offset-8   "
+                  >
+                    socials
+                  </a>
+                </li>
+              </ul>
+            </nav>
             <a href="https://www.twentyonepilots.com/">
               <div id="website">website</div>
             </a>
           </div>
         </div>
       </header>
+
       <main className="px-14 max-w-screen bg-black flex flex-col gap-24 ">
-        <div
-          id="quote and picture"
-          className="flex flex-col items-center p-10 "
-        >
+        <div id="main" className="flex flex-col items-center p-10 ">
           <h1
             className=" animate-[pulse_3s_ease-in-out_infinite]
  text-red-500/60 font-serif font-light tracking-wide text-center text-6xl w-2/3 p-32 justify-center align-middle"
@@ -88,10 +121,10 @@ function App() {
           </div>
         </div>
 
-        <Separator className="bg-gray-400" />
+        <Separator id="songsSep" className="bg-gray-400" />
 
         <div
-          id="carousel"
+          id="songs"
           className="flex flex-col align-middle justify-evenly px-5 gap-5"
         >
           <h2 className="text-3xl text-white font-bold px-24">
@@ -153,7 +186,7 @@ function App() {
           </Carousel>
         </div>
 
-        <Separator className="bg-gray-400" />
+        <Separator className="bg-gray-400" id="membersSep" />
 
         <div id="members" className="px-5 flex flex-col gap-10">
           <h2 className="text-3xl text-white font-bold px-24">Band members</h2>
@@ -196,7 +229,7 @@ function App() {
           </div>
         </div>
 
-        <Separator className="bg-gray-400" />
+        <Separator className="bg-gray-400" id="questionsSep" />
 
         <div id="questions" className="w-full flex flex-col p-5 gap-16 ">
           <h2 className="text-3xl text-white font-bold px-24">Questions</h2>
