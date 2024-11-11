@@ -29,7 +29,7 @@ function App() {
       >
         <div
           id="navbar"
-          className={`w-[92.7%] bg-red-700 flex justify-between fixed font-typeface text-5xl font-extralight tracking-wide `}
+          className="font-typeface w-[92.7%] bg-red-700 flex justify-between fixed  text-5xl font-extralight tracking-wide "
         >
           <div id="logo and name" className="flex gap-4 p-3 px-7 items-center">
             <img
@@ -43,8 +43,8 @@ function App() {
             id="navigations and website"
             className="flex gap-14 p-3 px-7 text-4xl items-center"
           >
-            <nav id="navigations" className="gap-24">
-              <ul className=" flex flex-row gap-4 ">
+            <div id="navigations" className="gap-24">
+              <ul className=" flex flex-row gap-4">
                 <li>
                   <a
                     href="#main"
@@ -86,7 +86,7 @@ function App() {
                   </a>
                 </li>
               </ul>
-            </nav>
+            </div>
             <a href="https://www.twentyonepilots.com/">
               <div id="website">website</div>
             </a>
