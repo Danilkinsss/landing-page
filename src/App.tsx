@@ -3,13 +3,6 @@ import IMAGES from './images/Images'
 
 // shadcn components
 import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from '@/components/ui/carousel'
-import {
   Accordion,
   AccordionContent,
   AccordionItem,
@@ -17,8 +10,9 @@ import {
 } from './components/ui/accordion'
 import { Button } from './components/ui/button'
 import { Separator } from './components/ui/separator'
-import Achievements from './components/Achievements'
+import Introduction from './components/Introduction'
 import SongsCarousel from './components/SongsCarousel'
+import BandMembers from './components/BandMembers'
 
 function App() {
   const paragraphs = ['main', 'songs', 'members', 'questions', 'socials']
@@ -65,80 +59,25 @@ function App() {
       </header>
 
       <main className="px-14 max-w-screen bg-black flex flex-col gap-24 ">
-        <div id="main" className="flex flex-col items-center p-10 pt-20">
-          <h1
-            className=" animate-[pulse_3s_ease-in-out_infinite]
- text-red-500/60 font-serif font-light tracking-wide text-center text-6xl w-2/3 p-32 justify-center align-middle"
-          >
-            "Unfiltered anthems, raw energy, and fearless artistry."
-          </h1>
-          <img
-            src={IMAGES.poster}
-            alt="first image"
-            className="object-cover h-96 w-[90%] p-10 opacity-75 blur-sm hover:blur-none  delay-200"
-          />
-
-          <Achievements />
+        <div id="main" className="px-5">
+          <Introduction />
         </div>
 
         <Separator id="songs" className="bg-gray-400" />
 
-        <div
-          id="songs"
-          className="flex flex-col align-middle justify-evenly px-5 gap-5"
-        >
-          <h2 className="text-3xl text-white font-bold px-24">
-            My favourite songs
-          </h2>
+        <div id="songsElem" className=" px-5">
           <SongsCarousel />
         </div>
 
         <Separator id="members" className="bg-gray-400" />
 
-        <div id="members" className="px-5 flex flex-col gap-10">
-          <h2 className="text-3xl text-white font-bold px-24">Band members</h2>
-          <div className="items-center flex flex-row gap-32 justify-center place-items-center">
-            <h3 className="text-lg font-serif  text-white w-[20%] leading-relaxed">
-              <p className="text-2xl text-amber-200 font-bold">Tyler Joseph</p>{' '}
-              is the creative mind behind Twenty One Pilots, leading with
-              vocals, lyrics, and an array of instruments. He's known for
-              pouring raw, introspective energy into every performance.
-            </h3>
-            <a
-              href="https://en.wikipedia.org/wiki/Tyler_Joseph"
-              className="p-0 h-1/4 w-1/4 min-h-36 min-w-80"
-            >
-              <img
-                src={IMAGES.tyler}
-                alt="Tyler Joseph picture"
-                className="rounded-full"
-              />
-            </a>
-          </div>
-
-          <div className="flex flex-row gap-32 justify-center place-items-center">
-            <a
-              href="https://en.wikipedia.org/wiki/Josh_Dun"
-              className="p-0 h-1/4 w-1/4 min-h-36 min-w-80"
-            >
-              <img
-                src={IMAGES.josh}
-                alt="Josh Dun picture"
-                className="rounded-full"
-              />
-            </a>
-            <h3 className="text-lg font-serif  text-white w-[20%] leading-relaxed">
-              <p className="text-2xl text-cyan-200 font-bold">Josh Dun</p>
-              is the band’s dynamic drummer, always bringing explosive energy on
-              stage. He's the guy often found flipping over his drum kit
-              mid-song or jumping into the crowd.
-            </h3>
-          </div>
+        <div id="membersElem" className="px-5 ">
+          <BandMembers />
         </div>
 
         <Separator id="questions" className="bg-gray-400" />
 
-        <div id="questions" className="w-full flex flex-col px-5 gap-16 ">
+        <div id="questionsElem" className="w-full flex flex-col px-5 gap-16 ">
           <h2 className="text-3xl text-white font-bold px-24">Questions</h2>
           <Accordion
             type="single"

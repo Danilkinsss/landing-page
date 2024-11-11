@@ -1,42 +1,3 @@
-export const people = [
-  {
-    id: 0,
-    name: 'Creola Katherine Johnson',
-    profession: 'mathematician',
-    accomplishment: 'spaceflight calculations',
-    imageId: 'MK3eW3A',
-  },
-  {
-    id: 1,
-    name: 'Mario José Molina-Pasquel Henríquez',
-    profession: 'chemist',
-    accomplishment: 'discovery of Arctic ozone hole',
-    imageId: 'mynHUSa',
-  },
-  {
-    id: 2,
-    name: 'Mohammad Abdus Salam',
-    profession: 'physicist',
-    accomplishment: 'electromagnetism theory',
-    imageId: 'bE7W1ji',
-  },
-  {
-    id: 3,
-    name: 'Percy Lavon Julian',
-    profession: 'chemist',
-    accomplishment:
-      'pioneering cortisone drugs, steroids and birth control pills',
-    imageId: 'IOjWm71',
-  },
-  {
-    id: 4,
-    name: 'Subrahmanyan Chandrasekhar',
-    profession: 'astrophysicist',
-    accomplishment: 'white dwarf star mass calculations',
-    imageId: 'lrWQx8l',
-  },
-]
-
 import IMAGES from '../images/Images.tsx'
 
 export const songs = [
@@ -63,5 +24,26 @@ export const songs = [
     name: 'The Hype',
     href: 'https://www.youtube.com/watch?v=Io2hbcrAYBw',
     image: IMAGES.song4,
+  },
+]
+
+export const members = [
+  {
+    id: 0,
+    name: 'Tyler Joseph',
+    description: `is the creative mind behind Twenty One Pilots, leading with vocals,
+          lyrics, and an array of instruments. He's known for pouring raw,
+          introspective energy into every performance.`,
+    href: 'https://en.wikipedia.org/wiki/Tyler_Joseph',
+    image: IMAGES.tyler,
+  },
+  {
+    id: 1,
+    name: 'Josh Dun',
+    description: `is the band’s dynamic drummer, always bringing explosive energy on
+    stage. He's the guy often found flipping over his drum kit mid-song or
+    jumping into the crowd.`,
+    href: 'https://en.wikipedia.org/wiki/Tyler_Joseph',
+    image: IMAGES.josh,
   },
 ]
