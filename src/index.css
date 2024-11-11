@@ -4,8 +4,11 @@
 
 @font-face {
   font-family: 'Typeface';
-  src: url('src/assets/Typeface Font.ttf');
+  src: url('src/assets/Typeface_Font.ttf') format('tff');
+  font-weight: normal;
+  font-style: normal;
 }
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
