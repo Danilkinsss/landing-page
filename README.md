@@ -48,3 +48,6 @@ export default tseslint.config({
   },
 })
 ```
+
+# Personal Notes
+21 pilots are the best🤘
